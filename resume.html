@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asia University - Student Resume</title>
+    <style>
+        :root {
+            --au-green: #004d40; 
+            --sidebar-bg: #f8f9fa;
+            --text-main: #2c3e50;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #525659;
+            margin: 0;
+            padding: 40px 0;
+            color: var(--text-main);
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 0;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            display: flex;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 30%;
+            background-color: var(--sidebar-bg);
+            padding: 40px 25px;
+            border-right: 1px solid #eee;
+        }
+
+        .profile-photo-box {
+            width: 150px;
+            height: 150px;
+            background-color: #e9ecef;
+            border: 2px dashed #adb5bd;
+            margin: 0 auto 30px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-photo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .side-section {
+            margin-bottom: 30px;
+        }
+
+        .side-title {
+            color: var(--au-green);
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #dee2e6;
+            margin-bottom: 12px;
+            padding-bottom: 5px;
+        }
+
+        .side-content {
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        /* Main Content */
+        .main-content {
+            width: 70%;
+            padding: 45px 40px;
+        }
+
+        .header {
+            margin-bottom: 40px;
+        }
+
+        .name {
+            font-size: 36px;
+            color: var(--au-green);
+            font-weight: 700;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .student-id {
+            font-size: 16px;
+            color: #7f8c8d;
+            margin-top: 5px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--au-green);
+            border-left: 4px solid var(--au-green);
+            padding-left: 10px;
+            margin-bottom: 15px;
+        }
+
+        .entry {
+            margin-bottom: 15px;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .entry-sub {
+            color: #555;
+            font-style: italic;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        ul {
+            margin: 5px 0;
+            padding-left: 18px;
+            font-size: 14px;
+        }
+
+        li {
+            margin-bottom: 4px;
+        }
+
+        @media print {
+            body { background: none; padding: 0; }
+            .page { box-shadow: none; margin: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page">
+        <div class="sidebar">
+            <div class="profile-photo-box">
+                <img src="photo.jpg" alt="Photo Placeholder">
+            </div>
+
+            <div class="side-section">
+                <div class="side-title">Contact</div>
+                <div class="side-content">
+                    Email: your.email@asia.edu.tw<br>
+                    Phone: 0912-345-678<br>
+                    Location: Taichung, Taiwan
+                </div>
+            </div>
+
+            <div class="side-section">
+                <div class="side-title">Languages</div>
+                <div class="side-content">
+                    Mandarin (Native)<br>
+                    English (TOEIC: XXX)<br>
+                    Japanese (Basic)
+                </div>
+            </div>
+
+            <div class="side-section">
+                <div class="side-title">Skills</div>
+                <div class="side-content">
+                    • Microsoft Office<br>
+                    • Python / Java<br>
+                    • Adobe Photoshop<br>
+                    • Team Leadership
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="header">
+                <h1 class="name">Salomo Alden Christian Sinaga</h1>
+                <div class="student-id">Student ID: 114021148</div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Education</div>
+                <div class="entry">
+                    <div class="entry-header">
+                        <span>Asia University</span>
+                        <span>2022 — 2026</span>
+                    </div>
+                    <div class="entry-sub">Bachelor of [Major Name]</div>
+                    <ul>
+                        <li>Relevant Coursework: [Course 1], [Course 2]</li>
+                        <li>Recipient of [Scholarship Name or Award]</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Experience</div>
+                <div class="entry">
+                    <div class="entry-header">
+                        <span>[Job/Internship Title]</span>
+                        <span>Summer 2024</span>
+                    </div>
+                    <div class="entry-sub">[Company Name]</div>
+                    <ul>
+                        <li>Successfully completed [task] leading to [result].</li>
+                        <li>Collaborated with a team of [number] to achieve [goal].</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Projects</div>
+                <div class="entry">
+                    <div class="entry-header">
+                        <span>[Project Name]</span>
+                        <span>2023</span>
+                    </div>
+                    <ul>
+                        <li>Developed a [system/app/report] focused on [topic].</li>
+                        <li>Presented findings to [audience/professor].</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Activities</div>
+                <div class="entry">
+                    <div class="entry-header">
+                        <span>[Club Name]</span>
+                        <span>Member / Officer</span>
+                    </div>
+                    <ul>
+                        <li>Participated in campus-wide events.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
