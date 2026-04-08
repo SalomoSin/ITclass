@@ -241,6 +241,33 @@
         </div>
     </div>
 </div>
+<div id="audio-container" style="position: fixed; bottom: 20px; right: 20px; background: #272729; padding: 10px; border-radius: 50px; border: 1px solid #3c4043; display: flex; align-items: center; box-shadow: 0 4px 15px rgba(0,0,0,0.4); z-index: 1000;">
+    
+    <audio id="resumeMusic" loop>
+        <source src="resumemusic.mp3" type="audio/mpeg">
+    </audio>
 
+    <button onclick="toggleMusic()" id="musicBtn" style="background: #4db6ac; border: none; color: white; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 16px; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+        ▶
+    </button>
+</div>
+
+<script>
+    const music = document.getElementById("resumeMusic");
+    const btn = document.getElementById("musicBtn");
+    
+    // Default volume set to 30% to be polite
+    music.volume = 0.3;
+
+    function toggleMusic() {
+        if (music.paused) {
+            music.play().catch(e => console.log("Playback requires user click first."));
+            btn.innerHTML = "⏸";
+        } else {
+            music.pause();
+            btn.innerHTML = "▶";
+        }
+    }
+</script>
 </body>
 </html>
